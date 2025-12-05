@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        .btn {
+            padding: 10px 20px;
+            background: #444;
+            color: white;
+            border: none;
+        }
+        .btn:hover{
+            background-color: yellow;
+            color: black;
+        }
+        .clicar{
+            padding: 10px;
+            background: #008cFF;
+            color: white;
+        }
+        .clicar:active{
+            transform: scale(0.45);
+        }
+        .campo{
+            padding: 8px;
+            border: 2px solid #aaa;
+        }
+        .campo:focus {
+            border-color: #0066FF;
+            outline: none;
+        }
+        .link {
+            color: blue;
+        }
+        .link:visited {
+            color: purple;
+        }
+        .bloco p:first-child {
+            font-weight: bold;
+        }
+        .lista li:last-child{
+            color: red;
+        }
+        .menu li:nth-child(2){
+            color: rgb(0, 255, 0);
+        }
+        #aceitar:checked + label {
+            color: rgb(11, 255, 11);
+            font-weight: bold;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Classes</h1>
+    <h2>:hover</h2>
+    <button class="btn">Passe o mouse</button>
+    <h2>:active</h2>
+    <button class="clicar">Clique aqui</button>
+    <h2>:focus</h2>
+    <input type="text" class="campo" placeholder="Digite algo">
+    <h2>:visited</h2>
+    <a href="youtube.com" class="link">Meu link</a>
+    <H2>:first - child</H2>
+    <div class="bloco">
+        <p>Primeiro parágrafo</p>
+        <p>Segundo parágrafo</p>
+        </div>
+    <h2>:last - child</h2>
+    <ul class="lista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <h2>:nth - child</h2>
+    <ul class="menu">
+        <li>Home</li>
+        <li>Produtos</li>
+        <li>Contato</li>
+    </ul>
+        <h2>:checked</h2>
+        <input type="checkbox" id="aceitar">
+        <label for="aceitar">Aceitar os termos</label>
+
+
+
+</body>
+</html>

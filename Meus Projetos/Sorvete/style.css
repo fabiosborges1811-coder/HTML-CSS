@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  body {
+  background: linear-gradient(#C9FBFF);
+}
+
+  color: #26547C;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  text-align: center;
+  color: #FE5D26;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: #26547C;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #C9FBFF;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #FE5D26;
+}
+
+.banner {
+  background: url('sorvete.jpg') center/cover no-repeat;
+  position: relative;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+.banner-text {
+  position: relative;
+  color: white;
+  z-index: 2;
+}
+
+.banner h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.sabores {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  width: 260px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.09);
+  transition: .25s ease;
+  border: 1px solid #eee;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.promo {
+  background: #558564;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 14px;
+  margin: 60px auto;
+  width: 80%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+}
+
+footer {
+  background: #23967F;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  font-size: 1rem;
+  color: white;
+}

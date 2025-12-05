@@ -1,0 +1,136 @@
+:root { 
+    --cor1:#0B0F19;
+    --cor2:#1E2A55;
+    --cor3:#D4A427;
+    --cor4:#E85A0C;
+    --cor5:#C9D1D9;
+    --cor6:#FFFFFF;
+
+    --bg-dark:#111726;
+    --blue-space:#25346D;
+    --gold:#D4A427;
+    --storm:#E85A0C;
+    --text:#C9D1D9;
+    --white:#FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cor1);
+    color: var(--text);
+    font-family: "Roboto", sans-serif;
+}
+
+header { 
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, var(--cor2), transparent);
+}
+
+header h1 { 
+    color: var(--gold);
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+header h3 {
+    color: var(--cor5);
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 360px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 0 30px rgba(212,164,39,0.4);
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 16px;
+    background: var(--blue-space);
+    border-radius: 6px;
+    transition: 0.3s;
+    font-weight: 500;
+    border: 1px solid transparent;
+}
+
+nav a:hover {
+    background: transparent;
+    color: var(--gold);
+    border-color: var(--gold);
+}
+
+.cards {
+    margin: 50px auto;
+    display: grid;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.card {
+    background: var(--bg-dark);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.08);
+    transition: 0.3s;
+    border-left: 4px solid var(--blue-space);
+}
+
+.card h2 {
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-left-color: var(--storm);
+}
+
+section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    color: var(--gold);
+    margin-bottom: 18px;
+    font-size: 2rem;
+}
+
+section p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+section img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 25px 0;
+    box-shadow: 0 0 20px rgba(232,90,12,0.4);
+}
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px;
+    background: var(--blue-space);
+    color: var(--white);
+    font-size: 0.9rem;
+}
