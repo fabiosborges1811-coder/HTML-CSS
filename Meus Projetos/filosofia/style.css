@@ -1,0 +1,159 @@
+:root {
+    --cor1: #B4BEC9;
+    --cor2: #159A9C;
+    --cor3: #002333;
+    --cor4: #DEEFE7;
+    --cor5: #FFFFFF;
+}
+
+body {
+    background: linear-gradient(135deg, var(--cor1), var(--cor4), var(--cor5));
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--cor3);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+header {
+    padding: 20px 0;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor5);
+    background: var(--cor3);
+    padding: 8px 16px;
+    margin: 0 8px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: var(--cor2);
+}
+
+
+
+.home {
+    background: var(--cor2);
+    color: var(--cor5);
+    padding: 40px 25px;
+    border-radius: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.home img {
+    width: 400px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+
+
+h1 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+
+
+p {
+    line-height: 1.6;
+}
+
+ul, ol {
+    margin-left: 25px;
+    line-height: 1.7;
+}
+
+
+
+.obras ul {
+    list-style: none;
+    padding: 0;
+}
+
+.obras ul li {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.img-container img {
+    width: 200px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.img-container img:hover {
+    transform: scale(1.05);
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: var(--cor3);
+    color: var(--cor5);
+    font-size: 16px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 50px;
+}
+
+
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px 5px;
+        font-size: 16px;
+    }
+
+    .home img {
+        width: 160px;
+    }
+
+    .img-container img {
+        width: 160px;
+    }
+}
